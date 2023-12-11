@@ -1,0 +1,115 @@
+.container_box {
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+  width: 700px;
+  height: 450px;
+  background: rgb(236, 166, 109);
+  border: 3px dashed rgb(229, 94, 94);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.container_box h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgb(198, 10, 10);
+  text-decoration: underline;
+}
+.task_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 2px;
+}
+.task_input button {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: rgb(26, 169, 26);
+  font-size: 25px;
+  font-weight: 700;
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+.task_input input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  color: brown;
+  background: rgb(60, 240, 60);
+  cursor: pointer;
+}
+.tasks_display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  /* background: rgba(24, 115, 24, 0.498); */
+}
+.decoration {
+  position: relative;
+  width: 50%;
+  height: 40px;
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  gap: 4px;
+  background: rgba(200, 246, 200, 0.498);
+}
+.decoration .checkbox {
+  display: flex;
+}
+
+.decoration .checkbox .bx {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 30px;
+}
+
+.wrapper {
+  padding-left: 24px;
+  font-size: 18px;
+  font-weight: 550;
+  text-transform: capitalize;
+  background: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wrapper * {
+  display: contents;
+}
+.decoration button {
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  padding: 0px 2px;
+  background: transparent;
+  border: 2px solid black;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
