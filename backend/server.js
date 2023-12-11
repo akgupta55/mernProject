@@ -6,7 +6,7 @@ const TodoModel = require("./Models/Todo");
 const app = express();
 app.use(
   cors({
-    origin: ["https://deploy-mern-api.vercel.app"],
+    origin: ["https://mern-project-frontend-kappa.vercel.app"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
