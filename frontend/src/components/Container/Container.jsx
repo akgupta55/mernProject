@@ -6,16 +6,18 @@ function Container() {
   const [todos, setTodos] = useState([]);
   const [task, setTask] = useState("");
 
+  axios.defaults.withCredentials = true;
+
   useEffect(() => {
     axios
-      .get("http://localhost:3001/get")
+      .get("https://mern-project-api-ochre.vercel.app/get")
       .then((result) => setTodos(result.data))
       .catch((err) => console.log(err));
   }, []);
 
   function handleAddTodo() {
     axios
-      .post("http://localhost:3001/add", { task: task })
+      .post("https://mern-project-api-ochre.vercel.app/add", { task: task })
       .then(() => {
         location.reload();
       })
@@ -24,7 +26,7 @@ function Container() {
 
   function handleRemoveTodo(id) {
     axios
-      .delete("http://localhost:3001/delete/" + id)
+      .delete("https://mern-project-api-ochre.vercel.app/delete/" + id)
       .then(() => {
         location.reload();
       })
@@ -33,7 +35,7 @@ function Container() {
 
   function handlecheked(id) {
     axios
-      .put("http://localhost:3001/update/" + id)
+      .put("https://mern-project-api-ochre.vercel.app/update/" + id)
       .then(() => {
         location.reload();
       })
